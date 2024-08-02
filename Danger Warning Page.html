@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+    
+  <meta charset="UTF-8">
+
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Danger Warning Page</title>
+  
+
+    
+    
+  <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            color: red;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .warning-container {
+            text-align: center;
+            border: 5px solid red;
+            padding: 20px;
+            animation: pulse 1s infinite;
+            width: 80%;
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            animation: blink 1s infinite;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        @keyframes blink {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        button {
+            font-size: 1.5em;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: red;
+            border: none;
+            color: black;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            width: 100%;
+            max-width: 200px;
+        }
+        button:hover {
+            background-color: darkred;
+            transform: scale(1.1);
+        }
+    </style></head><body>
+    
+<div class="warning-container">
+        <h1>WARNING !</h1>
+        <p>This webpage is&nbsp; <span style="font-weight: bold;">linking your information.</span> please! stop this !</p>
+        <a href="Dangerous%20Hacking%20Page.html"><button id="proceedButton">Proceed</button></a>
+    </div>
+
+
+    
+<script>
+        document.getElementById('proceedButton').addEventListener('click', function() {
+            alert('You have been warned!');
+        });
+    </script>
+</body></html>

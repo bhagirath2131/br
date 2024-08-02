@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+    
+  <meta charset="UTF-8">
+
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dangerous Hacking Page</title>
+
+    
+    
+  <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #00ff00;
+            animation: pulse 1s infinite;
+            width: 90%;
+            max-width: 600px;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            animation: blink 1s infinite;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        button {
+            font-size: 1.2em;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #00ff00;
+            border: none;
+            color: black;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            width: 100%;
+            max-width: 200px;
+        }
+        button:hover {
+            background-color: #00cc00;
+            transform: scale(1.1);
+        }
+        @keyframes blink {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head><body>
+    
+<div class="container">
+        <h1><small>you'r</small> <small>location tracked by me</small><br>
+</h1>
+        <p>This is a hacking-location traker . <br>
+</p>
+<p><span style="color: red;">you now in india,gujarat</span>.<br>
+</p>
+<p> caution!</p>
+
+        <a href="Welcome%2520to%2520Our%2520Schoo.html"><button id="proceedButton">Proceed</button></a>
+    </div>
+
+
+    
+<script>
+        document.getElementById('proceedButton').addEventListener('click', function() {
+            alert('You have been warned!');
+        });
+    </script>
+</body></html>
